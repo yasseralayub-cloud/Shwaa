@@ -3,207 +3,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>منيو مطعم شواء</title>
+<title>مطعم شواء</title>
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
-
-body {
-  font-family: 'Tajawal', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff8f0;
-  color: #333;
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#fff;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  background-color: #000;
-  color: #FFD700;
-  text-align: center;
-  padding: 1rem 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header{
+  position:sticky;
+  top:0;
+  background:#000;
+  color:#FFD700;
+  padding:15px;
+  text-align:center;
+  font-size:26px;
+  font-weight:bold;
+  z-index:1000;
 }
 
-header img {
-  height: 60px;
-  width: auto;
+section{
+  margin-bottom:40px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
+h2{
+  background:#FFD700;
+  color:#000;
+  padding:10px;
+  margin:0;
 }
 
-main {
-  padding: 1rem 2rem;
+.item{
+  text-align:center;
+  margin-bottom:30px;
 }
 
-section {
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #f0f0f0;
+.item img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
 }
 
-h2 {
-  color: #FFD700;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid #FFD700;
-  display: inline-block;
-  padding-bottom: 0.2rem;
+.item-name{
+  font-size:20px;
+  font-weight:bold;
+  margin-top:10px;
 }
 
-.item {
-  margin-bottom: 1rem;
+.item-desc{
+  color:#555;
+  margin:5px 0;
 }
 
-.item-name {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #000;
+.price{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:5px;
+  margin-top:5px;
 }
 
-.item-desc {
-  font-size: 0.9rem;
-  color: #555;
-  margin-right: 1rem;
+.price span{
+  color:#FFD700;
+  font-weight:bold;
+  font-size:20px;
 }
 
-.item-price {
-  font-size: 0.95rem;
-  font-weight: bold;
-  color: #FFD700;
-  margin-right: 1rem;
+.price img{
+  width:18px;
+  height:auto;
 }
 
-.box-title {
-  color: #FFD700;
-  font-weight: bold;
-  font-size: 1rem;
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:15px;
 }
 
-.box-desc {
-  font-size: 0.85rem;
-  color: #555;
-  margin-right: 1rem;
-}
-
-@media (max-width: 600px) {
-  main {
-    padding: 0.5rem 1rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-  .item-name {
-    font-size: 1rem;
-  }
+footer a{
+  color:#FFD700;
+  text-decoration:none;
+  font-weight:bold;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <img src="logo.png" alt="لوغو مطعم شواء"> <!-- ضع شعارك هنا -->
-  <h1>مطعم شواء</h1>
+مطعم شواء
 </header>
-
-<main>
 
 <!-- السندويتشات -->
 <section>
 <h2>🥙 السندويتشات</h2>
-<div class="item"><div class="item-name">لفّة الشواء الأصلية</div><div class="item-desc">دجاج شاورما + ثوم + بطاطس + صوصات اختيارية</div><div class="item-price">15 ريال</div></div>
-<div class="item"><div class="item-name">لفّة الفحم</div><div class="item-desc">دجاج بنكهة الفحم + ثوم + بطاطس + صوصات اختيارية</div><div class="item-price">16 ريال</div></div>
-<div class="item"><div class="item-name">لفّة الجبنة</div><div class="item-desc">دجاج + جبنة + ثوم + بطاطس + صوصات اختيارية</div><div class="item-price">18 ريال</div></div>
-<div class="item"><div class="item-name">لفّة سبايسي</div><div class="item-desc">دجاج + صوص حار + بطاطس + صوصات اختيارية</div><div class="item-price">17 ريال</div></div>
-<div class="item"><div class="item-name">لفّة دبل</div><div class="item-desc">كمية دجاج مضاعفة + ثوم + بطاطس + صوصات</div><div class="item-price">22 ريال</div></div>
-<div class="item"><div class="item-name">لفّة خبز بر</div><div class="item-desc">دجاج + ثوم + بطاطس + صوصات بخبز بر</div><div class="item-price">15 ريال</div></div>
+
+<div class="item">
+<img src="images/shawarma_roll.gif">
+<div class="item-name">لفّة الشواء الأصلية</div>
+<div class="item-desc">دجاج + ثوم + بطاطس + صوصات اختيارية</div>
+<div class="price">
+<span>15</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
+<div class="item">
+<img src="images/fahm_roll.gif">
+<div class="item-name">لفّة الفحم</div>
+<div class="item-desc">دجاج بنكهة الفحم + ثوم + بطاطس</div>
+<div class="price">
+<span>16</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
+<div class="item">
+<img src="images/cheese_roll.gif">
+<div class="item-name">لفّة الجبنة</div>
+<div class="item-desc">دجاج + جبنة + بطاطس + صوصات</div>
+<div class="price">
+<span>18</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
 </section>
 
 <!-- الشاورما العربي -->
 <section>
 <h2>🌯 الشاورما العربي</h2>
-<div class="item"><div class="item-name">العربي الذهبي</div><div class="item-desc">لفّات شاورما مقطعة + بطاطس + صوصات</div><div class="item-price">18 ريال</div></div>
-<div class="item"><div class="item-name">العربي الكبير</div><div class="item-desc">كمية أكبر مع بطاطس وصوصات</div><div class="item-price">22 ريال</div></div>
-<div class="item"><div class="item-name">العربي العائلي</div><div class="item-desc">حجم كبير للمشاركة</div><div class="item-price">35 ريال</div></div>
-</section>
 
-<!-- بوكسات الجمعات -->
-<section>
-<h2>🎉 بوكس الجمعات</h2>
-<div class="item"><div class="box-title">بوكس السهرة</div><div class="box-desc">4–6 سندويتشات صغيرة + بطاطس + صوصات (للشخصين)</div><div class="item-price">70 ريال</div></div>
-<div class="item"><div class="box-title">بوكس اللمة</div><div class="box-desc">8–10 سندويتشات صغيرة + بطاطس + صوصات (3–4 أشخاص)</div><div class="item-price">120 ريال</div></div>
-<div class="item"><div class="box-title">بوكس الشلة</div><div class="box-desc">12–15 سندويتشًا + بطاطس + صوصات (5–6 أشخاص)</div><div class="item-price">180 ريال</div></div>
-<div class="item"><div class="box-title">بوكس الضيافة</div><div class="box-desc">20–25 سندويتشًا + بطاطس + صوصات (حفلات)</div><div class="item-price">300 ريال</div></div>
+<div class="item">
+<img src="images/arabic_shawarma.gif">
+<div class="item-name">العربي الذهبي</div>
+<div class="item-desc">لفّات شاورما مقطعة + بطاطس + صوصات</div>
+<div class="price">
+<span>18</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
 </section>
 
 <!-- برجر الشاورما -->
 <section>
 <h2>🍔 برجر الشاورما</h2>
-<div class="item"><div class="item-name">برجر الشواء</div><div class="item-desc">دجاج + خبز برجر + ثوم + بطاطس + صوصات</div><div class="item-price">20 ريال</div></div>
-<div class="item"><div class="item-name">برجر الجبنة</div><div class="item-desc">دجاج + جبنة + ثوم + صوصات</div><div class="item-price">22 ريال</div></div>
-<div class="item"><div class="item-name">برجر سبايسي</div><div class="item-desc">دجاج + صوص حار + صوصات</div><div class="item-price">21 ريال</div></div>
-<div class="item"><div class="item-name">برجر دبل</div><div class="item-desc">كمية دجاج مضاعفة + صوصات</div><div class="item-price">28 ريال</div></div>
+
+<div class="item">
+<img src="images/burger_shawarma.gif">
+<div class="item-name">برجر الشاورما</div>
+<div class="item-desc">دجاج + خبز برجر + ثوم + صوصات</div>
+<div class="price">
+<span>20</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
 </section>
 
 <!-- المشاوي -->
 <section>
 <h2>🍢 المشاوي</h2>
-<div class="item"><div class="item-name">شيش طاووق</div><div class="item-desc">دجاج مشوي + خبز + بطاطس + صوصات</div><div class="item-price">28 ريال</div></div>
-<div class="item"><div class="item-name">كباب دجاج</div><div class="item-desc">كباب دجاج مشوي + خبز + صوصات</div><div class="item-price">30 ريال</div></div>
-<div class="item"><div class="item-name">كباب لحم</div><div class="item-desc">كباب لحم مشوي على الفحم</div><div class="item-price">35 ريال</div></div>
-<div class="item"><div class="item-name">أوصال لحم</div><div class="item-desc">قطع لحم مشوية + خبز + صوصات</div><div class="item-price">38 ريال</div></div>
-<div class="item"><div class="item-name">ريش غنم</div><div class="item-desc">ريش مشوية + خبز + صوصات</div><div class="item-price">45 ريال</div></div>
-<div class="item"><div class="item-name">نصف دجاجة</div><div class="item-desc">نصف دجاجة مشوية + خبز + صوص</div><div class="item-price">28 ريال</div></div>
-<div class="item"><div class="item-name">دجاجة كاملة</div><div class="item-desc">دجاجة مشوية كاملة</div><div class="item-price">50 ريال</div></div>
+
+<div class="item">
+<img src="images/shish_tawook.gif">
+<div class="item-name">شيش طاووق</div>
+<div class="item-desc">دجاج مشوي + خبز + صوصات</div>
+<div class="price">
+<span>28</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
+<div class="item">
+<img src="images/kabab_beef.gif">
+<div class="item-name">كباب لحم</div>
+<div class="item-desc">كباب لحم مشوي على الفحم</div>
+<div class="price">
+<span>35</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
 </section>
 
 <!-- المقبلات -->
 <section>
 <h2>🥗 المقبلات</h2>
-<div class="item"><div class="item-name">حمص</div><div class="item-desc">حمص + طحينة + زيت</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">متبل</div><div class="item-desc">باذنجان مشوي + طحينة</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">بابا غنوج</div><div class="item-desc">باذنجان مدخن + طحينة</div><div class="item-price">13 ريال</div></div>
-<div class="item"><div class="item-name">تبولة</div><div class="item-desc">بقدونس + خضار طازجة</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">فتوش</div><div class="item-desc">سلطة + خبز مقرمش</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">بطاطس</div><div class="item-desc">بطاطس مقلية مقرمشة</div><div class="item-price">10 ريال</div></div>
-<div class="item"><div class="item-name">ودجز</div><div class="item-desc">بطاطس متبلة ومقرمشة</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">موزاريلا</div><div class="item-desc">أصابع جبن مقليّة</div><div class="item-price">15 ريال</div></div>
+
+<div class="item">
+<img src="images/hummus.gif">
+<div class="item-name">حمص</div>
+<div class="item-desc">حمص بالطحينة وزيت الزيتون</div>
+<div class="price">
+<span>12</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
+<div class="item">
+<img src="images/fries.gif">
+<div class="item-name">بطاطس</div>
+<div class="item-desc">بطاطس مقلية مقرمشة</div>
+<div class="price">
+<span>10</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
 </section>
 
-<!-- العصائر والمشروبات -->
+<!-- المشروبات -->
 <section>
 <h2>🥤 المشروبات</h2>
-<div class="item"><div class="item-name">بيبسي</div><div class="item-desc">مشروب غازي 330مل</div><div class="item-price">5 ريال</div></div>
-<div class="item"><div class="item-name">ماء</div><div class="item-desc">عبوة صغيرة/كبيرة</div><div class="item-price">2–3 ريال</div></div>
+
+<div class="item">
+<img src="images/pepsi.gif">
+<div class="item-name">بيبسي</div>
+<div class="item-desc">علبة 330 مل</div>
+<div class="price">
+<span>5</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
+<div class="item">
+<img src="images/orange_juice.gif">
+<div class="item-name">عصير برتقال</div>
+<div class="item-desc">عصير طازج</div>
+<div class="price">
+<span>10</span>
+<img src="images/riyal.png">
+</div>
+</div>
+
 </section>
 
-<section>
-<h2>🧃 العصائر الطازجة</h2>
-<div class="item"><div class="item-name">برتقال</div><div class="item-desc">عصير برتقال طازج</div><div class="item-price">10 ريال</div></div>
-<div class="item"><div class="item-name">ليمون</div><div class="item-desc">عصير ليمون منعش</div><div class="item-price">10 ريال</div></div>
-<div class="item"><div class="item-name">ليمون نعناع</div><div class="item-desc">ليمون مع نعناع</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">مانجو</div><div class="item-desc">عصير مانجو طبيعي</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">فراولة</div><div class="item-desc">عصير فراولة طازج</div><div class="item-price">12 ريال</div></div>
-<div class="item"><div class="item-name">كوكتيل</div><div class="item-desc">خليط فواكه متنوعة</div><div class="item-price">15 ريال</div></div>
-<div class="item"><div class="item-name">أفوكادو</div><div class="item-desc">عصير أفوكادو كريمي</div><div class="item-price">15 ريال</div></div>
-</section>
-
-<section>
-<h2>☕ المشروبات الساخنة</h2>
-<div class="item"><div class="item-name">شاي كرك</div><div class="item-desc">شاي بالحليب والبهارات</div><div class="item-price">8 ريال</div></div>
-<div class="item"><div class="item-name">شاي حليب</div><div class="item-desc">شاي بالحليب</div><div class="item-price">7 ريال</div></div>
-<div class="item"><div class="item-name">شاي زنجبيل</div><div class="item-desc">شاي بالزنجبيل الطازج</div><div class="item-price">8 ريال</div></div>
-</section>
-<!-- أسفل الصفحة -->
-<footer style="text-align:center; padding:1rem; font-size:0.9rem; color:#555; border-top:1px solid #f0f0f0; margin-top:2rem;">
-  جميع الحقوق محفوظة © مطعم شواء 2026
-  <br>
-  تطوير: <a href="https://wa.me/966506572881" target="_blank" style="color:#FFD700; text-decoration:none;">LUXCOD</a>
+<footer>
+جميع الحقوق محفوظة © مطعم شواء 2026 <br>
+تطوير: <a href="https://wa.me/966506572881" target="_blank">LUXCOD</a>
 </footer>
-</main>
+
 </body>
 </html>
